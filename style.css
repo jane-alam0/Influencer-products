@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #FFF; */
+}
+
+/* header style starts here  */
+
+/* nav style starts  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 120px;
+}
+nav h1 {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  margin-left: 35px;
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.bars {
+  display: none;
+}
+
+/* banner style starts  */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 100px 120px;
+  min-height: 500px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.banner-title {
+  color: #3a3a3a;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+.banner-btn {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 41px;
+  background-color: #e02c6d;
+  border: none;
+  padding: 10px 24px;
+  margin-top: 20px;
+  width: 12rem;
+}
+
+/* main section style  */
+/* sponsor section style   */
+.sponsor-section {
+  width: 70%;
+  margin: 80px auto;
+}
+.sponsor-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+.sponsor-container img {
+  width: 100px;
+}
+/* product section style  */
+.product-section {
+  margin: auto;
+  margin-top: 120px;
+}
+.product-section .product-title {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px 0;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 70%;
+  margin: auto;
+}
+.card {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  width: 329px;
+  padding: 10px 0;
+}
+.card-img {
+  width: 300px;
+  margin: auto;
+  height: 256px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-content {
+  padding: 15px;
+}
+.card-content .card-title {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+}
+.card-content .prize {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-weight: 400;
+}
+.rate {
+  color: #5e6366;
+  font-size: 14px;
+  font-weight: 700;
+}
+.card-des {
+  color: #787885;
+  font-size: 14px;
+  font-weight: 700;
+}
+.seemore {
+  color: rgba(224, 44, 109, 0.87);
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  position: relative;
+  right:-800px ;
+  bottom:0dvh;
+}
+/* featured style  */
+.featured {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  margin-top: 120px;
+  column-gap: 6rem;
+}
+.featured-title {
+  color: #0a0826;
+  font-size: 38px;
+  font-weight: 700;
+}
+.featured button {
+  padding: 10px 24px;
+  gap: 8px;
+  background: #e02c6d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  margin-top: 20px;
+}
+
+/* footer style here  */
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  line-height: 40px;
+}
+footer .social-icon a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 0 10px;
+}
+/* responsive design starts  */
+/* mobil screen design  */
+@media screen and (max-width: 576px) {
+  /* nav responsive  */
+  nav {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .li1,
+  .li2,
+  .li3,
+  .li4,
+  .li5 {
+    display: none;
+  }
+  ul li {
+    margin: 0;
+  }
+  .bars {
+    display: block;
+  }
+  /* banner responsive */
+  .banner {
+    flex-direction: column-reverse;
+    width: 100%;
+    background-position: 50% 10%;
+    background-size: 60%;
+    margin: 0 auto;
+  }
+  .banner-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .banner-img img {
+    width: 60%;
+    margin: 70px 0px 0px 100px;
+  }
+  .banner p {
+    text-align: center;
+  }
+  .banner-btn {
+    margin: 40px auto;
+  }
+  /* main responsive  */
+
+  .sponsor-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 100%;
+  }
+  .card-img {
+    width: 90%;
+  }
+  .seemore{
+    position: static;
+  }
+  .featured{
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 90%;
+  }
+  .featured-img{
+    margin: auto;
+  }
+  .featured-title{
+    text-align: center;
+  }
+  .featured p{
+    text-align: center;
+  }
+  .featured button{
+    display: block;
+    margin: 15px auto;
+  }
+}
