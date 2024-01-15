@@ -252,7 +252,8 @@ footer .social-icon a{
     grid-template-columns: repeat(1, 1fr);
   }
   .card {
-    width: 100%;
+    width: 400px;
+    margin: auto;
   }
   .card-img {
     width: 90%;
